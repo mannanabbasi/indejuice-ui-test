@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fff7e6;
+}    
+
+.header {
+    background-color: #ffbb36;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*margin-left:20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;*/
+}
+
+.text1 {
+    font-family: Gotham-Bold;
+    color: #ffffff;
+    font-size: x-large;
+}
+
+.text2 {
+    font-family: Gotham-Medium;
+    color: #ffffff;
+    font-size: larger;
+}
+.logo {
+    height: 80px;
+    padding-left: 105px;
+}
+
+.logo img{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    padding-top: 35px;
+}
+
+.main {
+    margin-top: 3%;
+    padding-top: 3%;
+}
+.maincontent {
+    display: flex;
+    align-items: center;
+    margin-left: 12%;
+    margin-right: 12%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.line {
+    border-top: 3px solid #ede6d6;
+    flex-grow: 1;
+}
+.text{
+    font-family: Gotham-Book;
+    font-size: larger;
+    color: #4c4a45;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+.tile .productrow {
+    width: 60%;
+    margin : 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 7px solid #ede6d6;
+    border-right: 7px solid #ede6d6;
+    cursor: pointer;
+}
+.productrow img {
+    width: 150px;
+    height: 150px;
+}
+
+.contenttext {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contenttext #title{
+    font-family: Gotham-Medium;
+    margin-top: 15px;
+}
+.contenttext span{
+    font-family: Gotham-Light;
+    background-color: #ffffff;
+}
+
+.contenttext #desc{
+    margin-top: 20px;
+    padding-left: 10px;
+    font-family: Gotham-XLight;
+    line-height: 1.5;
+}
+.ribbon{
+        width: 220px;
+        height: 40px;
+        /*background-color:  #;*/
+        background-color:  #8ccc4e;
+        margin-right: -16px;
+        margin-top: 10px;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 9% 90%);
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 9% 90%);
+}
+#ribbontext{
+    padding: 8px;
+    font-family: Gotham-Medium;
+    color: #ffffff;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+.ribbon span {
+     font-family: Gothan-Thin;
+     font-size: larger;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 40%, .6);
+}
+   
+.modalcontent {
+    width: 20rem;
+    padding: 2rem 2rem;
+    border-radius: 0.8rem;
+    background: linear-gradient(to right bottom,  hsl(40deg 33% 48%), hsl(91deg 22% 46%));
+    box-shadow: 0.4rem 0.4rem 2.4rem 0.2rem hsl(236deg 50% 50% / 30%);
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modaltitle {
+    font-size: 2.2rem;
+
+}
+.modalSubtitle {
+    margin-top: 0rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#image{
+    width: 160px;
+    height: 150px;
+}
+#btn{
+    padding: 1rem 1.6rem;
+    border: 1px solid hsla(0, 0%, 100%, .4);
+    border-radius: 100rem;
+    color: inherit;
+    background: transparent;
+    font-size: 1.2rem;
+    font-family: inherit;
+    letter-spacing: .2rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width : 1200px) {
+    .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .logo{
+        padding-left: 105px;
+    }
+    .main {
+        margin-top: 4%;
+        padding-top: 3%;
+    }
+    .maincontent {
+        display: flex;
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .tile .productrow {
+        width: 90%;
+        margin: 10px;
+        padding: 10px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 7px solid #ede6d6;
+        border-right: 7px solid #ede6d6;
+        cursor: pointer;
+    }
+    
+}
+
+@media screen and (max-width: 900px){
+    .tile {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4%;
+    } 
+    .main {
+        margin-top: 4%;
+        padding-top: 5%;
+    }   
+
+    #ribbontext {
+        padding: 2px;
+        font-family: Gotham-Medium;
+        color: #ffffff;
+        margin-left: 10px;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .text2 {
+        font-family: Gotham-Medium;
+        color: #ffffff;
+        font-size: initial;
+    }
+
+    .main {
+        margin-top: 6%;
+        padding-top: 5%;
+    }
+    .maincontent {
+        display: none;
+    }
+    .tile {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4%;
+    }
+    .tile .productrow {
+        width: 80%;
+        margin: 10px;
+        padding: 10px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 7px solid #ede6d6;
+        border-right: 7px solid #ede6d6;
+        cursor: pointer;
+    }
+    .productrow img {
+        width: 150px;
+        height: 150px;
+        align-self: center;
+    }
+    .logo {
+        padding-left: 52px;
+    }
+    #ribbontext {
+        padding: 8px;
+        font-family: Gotham-Medium;
+        color: #ffffff;
+        font-weight: bolder;
+        margin-left: 95px;
+    }
+
+    .ribbon {
+        width: auto;
+        height: 40px;
+        background-color: #8ccc4e;
+        margin-right: -16px;
+        margin-left: 15px;
+        margin-top: 10px;
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 9% 90%);
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 9% 90%);
+    }
+    .contenttext #desc {
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 5px;
+        font-family: Gotham-XLight;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .logo{
+        padding-left: 10px;
+    }
+}
